@@ -1,0 +1,21 @@
+definitions:
+  main.SwaggerResponse:
+    properties:
+      message:
+        type: string
+    type: object
+info:
+  contact: {}
+paths:
+  /ping:
+    get:
+      description: It checks if the server is running
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/main.SwaggerResponse'
+      summary: Ping example
+swagger: "2.0"
